@@ -1,0 +1,27 @@
+1.  Baseline Needs More Love: On Simple Word-Embedding-Based Models and Associated Pooling Mechanisms
+     论文链接：https://www.paperweekly.site/papers/1987
+     代码链接：https://github.com/dinghanshen/SWEM
+     作者发现对于大多数的 NLP 问题，在 word embedding 矩阵上做简单的 pooling 操作就达到了比 CNN encoder 或者 LSTM encoder 更好的的结果。
+
+2. What you can cram into a single vector: Probing sentence embeddings for linguistic properties
+   https://www.paperweekly.site/papers/1977
+   文章构建了一系列的句子级别的任务来检测不同模型获得的句子向量的质量。
+
+3. Multi-modal Factorized Bilinear Pooling with Co-Attention Learning for Visual Question Answering
+    论文提出了一种新的 bilinear pooling 方法，即 MFB。此外，论文还引入了 co-attention 机制，来学习 image 和 question 的 attention。
+
+4. Universal Sentence Encoder
+本文来自 Google，论文将之前的"Attention Is All You Need"的 transformer 应用到 sentence embedding 上，和 DAN (Deep Averaging Network) 在计算复杂度和功耗上做了比较。
+并且在此基础上研究了两种方式在不同数据量的 transfer learning 上的表现，试验结果表明 transformer 在数据量较少的迁移学习上表现的比较好。文章还对比了不同的 transfer 的方式（sentence embedding 和 word embedding 的迁移）。
+
+5. DiSAN: Directional Self-Attention Network for RNN/CNN-Free Language Understanding
+本文是悉尼科技大学发表于 AAAI 2018 的工作，这篇文章是对 Self-Attention 的另一种应用，作者提出一种新的方向性的 Attention，从而能更加有效地理解语义。
+
+6. Supervised Learning of Universal Sentence Representations from Natural Language Inference Data
+本文来自 Facebook AI Research。本文研究监督句子嵌入，作者研究并对比了几类常见的网络架构（LSTM，GRU，BiLSTM，BiLSTM with self attention 和 Hierachical CNN）, 5 类架构具很强的代表性。  
+
+7.  微软亚洲研究院论文解读：GAN在网络特征学习中的应用
+https://mp.weixin.qq.com/s/V1XX8WWstR00m_OimMrDDw 
+
+8. 「知识表示学习」专题论文推荐
+https://mp.weixin.qq.com/s/hPrrI3OoFFidIf9IPr9_JQ
