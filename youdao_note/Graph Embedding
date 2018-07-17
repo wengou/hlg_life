@@ -1,0 +1,6 @@
+1. Billion-scale Commodity Embedding for E-commerce Recommendation in Alibaba
+    本文是阿里巴巴和香港科技大学发表于 SIGKDD 2018 的工作，论文结合节点 side information，解决了图表示学习中稀疏性和冷启动问题，在电商 i2i 推荐上取得很好的效果。
+
+2. Network Embedding as Matrix Factorization: Unifying DeepWalk, LINE, PTE, and node2vec
+        本文来自清华和微软。论文创造性地将 DeepWalk，LINE，Node2Vec 等 network embedding 的方法，通过 Matrix Factorization 框架来统一表示。
+        进一步地基于 Matrix Factorization 的思路，作者提出 NetMF 方法，实验证明优于 DeepWalk，LINE 的算法。此外作者也给出了相关 Upper Bound 的严格数学证明。
