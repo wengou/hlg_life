@@ -1,0 +1,32 @@
+1. 简明条件随机场CRF介绍
+https://mp.weixin.qq.com/s/BEjj5zJG3QmxvQiqs8P4-w
+
+2. On the Convergence of Adam and Beyond
+本文是 ICLR 2018 最佳论文之一。在神经网络优化方法中，有很多类似 Adam、RMSprop 这一类的自适应学习率的方法，但是在实际应用中，虽然这一类方法在初期下降的很快，但是往往存在着最终收敛效果不如 SGD+Momentum 的问题。
+
+3. 一文读懂「Attention is All You Need」
+https://mp.weixin.qq.com/s/q3OVJypM6HZQc58JpKJgVA
+
+4. Group Normalization
+本文为 Kaiming He 新作。Batch-Norm 在深度学习中一直扮演着重要的角色，但 BN 也存在着明显的问题——需要足够大的 Batch Size，大大增加了训练的成本。本文提出了一种新的归一化——Group Norm 替代 BN，并且通过实验证明，在较小的 Batch Size 下，使用 GN 的网络最终得到的结果，要比使用BN的结果更好。
+
+5. 自然语言处理中的自注意力机制（Self-Attention Mechanism）
+https://mp.weixin.qq.com/s/BeELZ213kp67RrU-yem8rg  
+
+6. Independently Recurrent Neural Network (IndRNN): Building A Longer and Deeper RNN
+本文使用 ReLU 等非饱和激活函数使网络变得更具有鲁棒性，可以处理很长的序列（超过 5000 个时间步），可以构建很深的网络（实验中用了 21 层）。在各种任务中取得了比 LSTM 更好的效果。
+
+7. 从最大似然到EM算法：一致的理解方式
+https://mp.weixin.qq.com/s/gjvy3dXSjFzqmDMhsHT2Ug 
+
+8. 详解深度学习中的Normalization，不只是BN（1）
+https://mp.weixin.qq.com/s/KnmQTKneSimuOGqGSPy58w
+
+9. 详解深度学习中的Normalization，不只是BN（2）
+ https://mp.weixin.qq.com/s/nSQvjBRMaBeoOjdHbyrbuw
+
+10. 更别致的词向量模型：Simpler GloVe - Part 2
+https://mp.weixin.qq.com/s/JbVIMtzeL9PYBMJgded-5w
+
+11. 综述 | 一文读懂自然语言处理NLP
+https://mp.weixin.qq.com/s/C_Yj3CuhRywr5TrrQnW9xQ
