@@ -1,0 +1,23 @@
+1. Show, Tell and Discriminate: Image Captioning by Self-retrieval with Partially Labeled Data
+    作者主要想解决的问题是生成的 caption 缺少多样性的问题，即多幅相似的图片可能会生成几乎一样的 caption。
+
+2. 自适应注意力机制在Image Caption中的应用
+https://mp.weixin.qq.com/s/zhZLK4pgJzQXN49YkYnSjA
+
+3. End-to-End Dense Video Captioning with Masked Transformer
+之前针对 dense video captioning 的文章都是构建两个模型：event proposal + captioning model，分别训练或者交替训练。本文提出一个 end-to-end 的模型，在 encoder 部分利用 self-attention，decoder 部分包括基于 ProcNets 进行改进的 Proposal Decoder 和 Captioning Decoder。
+文章的亮点在于将 Attention is all you need 中的 self-attention 和 multi-head attention 用到 captioning 任务中，并且采用相似的策略设计了 differential proposal mask 模块，使得 captioning decoder 可以只注意到当前要描述的 event，以及模型可以做 end-to-end 训练。
+
+4. Imagine This! Scripts to Compositions to Videos
+本文以《摩登原始人》的动画片段作为训练数据，对每个片段进行详细的文本标注，最终训练得到一个可以通过给定脚本或文字描述生成动画片段的模型。
+
+5. Generating Diverse and Accurate Visual Captions by Comparative Adversarial 
+本文来自华盛顿大学和微软，文章提出一个基于 GAN 的 Image Caption 框架，亮点如下：
+1. 提出用 comparative relevance score 来衡量 image-text 的质量从而指导模型的训练，并且在训练过程中引入 unrelated captions；
+2. 利用 human evaluations 评估 caption 的 accuracy，给出了和传统的六个评价指标的结果对比；
+3. 提出通过比较 caption feature vectors 的 variance 来评估 caption 的 diversity。
+
+6. CVPR2017有哪些值得读的Image Caption论文
+https://mp.weixin.qq.com/s/4bArQtsSqFbPBpx17vCMPg 
+
+
