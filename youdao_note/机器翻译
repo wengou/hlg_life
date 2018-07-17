@@ -1,0 +1,5 @@
+1. Accelerating Neural Transformer via an Average Attention Network
+本文主要研究机器翻译领域最先进的 Transformer 系统（Attention is all you need）。针对该系统解码效率底下的问题，本文在模型设计层面提出平均注意网络，在不损失翻译质量的情况下，本文所提模型有效提升解码速率 4~7 倍。 
+
+2. Phrase-Based & Neural Unsupervised Machine Translation
+    本文来自 Facebook AI Research，论文提出了 Phrase-based 和 Neural 两种方法。Phrase-based 处理两种语料关联少（如字母表不同），以及数据量少的情况；Neural 处理正常的情况。文章从三个角度分析设计模型：Initialization、Language Modeling、Iterative Back-Translation。
