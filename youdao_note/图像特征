@@ -1,0 +1,8 @@
+1.  Aesthetic-based Clothing Recommendation
+    本文是清华大学发表于 WWW 18 的工作，论文利用图片增强效果，传统的方法只考虑 CNN 抽取的图像特征；而本文考虑了图片中的美学特征对于推荐的影响；作者利用 BDN 从图片中学习美学特征，然后将其融合到 DCF 中，增强用户-产品，产品-时间矩阵，从而提高了推荐效果；在亚马逊和 AVA 数据集上都取得了良好的效果。
+
+2. An Universal Image Attractiveness Ranking Framework
+    本文来自微软，本文结合 deep convolutional neural network 和 rank net，设计对成对的图片的 Attractiveness 排序模型。 模型首先使用深度卷积得到网络图片的 attractiveness score 的均值和方差，然后使用设计好的标准，对两个图片之间的关系进行预测。
+
+3. Demystifying Core Ranking in Pinterest Image Search
+本文是 Pinterest 试验的图片检索算法，本文从：training data，user/image featurization 和 ranking models 等角度进行解读，并做了性能和质量方面的测试。
