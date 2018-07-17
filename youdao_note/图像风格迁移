@@ -1,0 +1,7 @@
+1. 用风格迁移搞事情！超越艺术字：卷积神经网络打造最美汉字 
+    https://mp.weixin.qq.com/s/PVM7wMsT6TpJkQUlt7d2Aw  
+    使用了 Keras 提供训练好的的 VGG19 模型，使用其中的几层卷积层作为风格损失，还使用最后一层卷积层作为内容损失。
+
+2. 综述：图像风格化算法最全盘点
+https://mp.weixin.qq.com/s/iV-OXiKF1jgAhSmX4QUIXw
+
