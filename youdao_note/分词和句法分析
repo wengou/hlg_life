@@ -1,0 +1,9 @@
+1. 从无监督构建词库看「最小熵原理」，套路是如何炼成的
+https://mp.weixin.qq.com/s/qSg7U_81lVmhbEi64VL47Q
+
+2. 再谈最小熵原理：“飞象过河”之句模版和语言结构
+https://mp.weixin.qq.com/s/a-37lfjg_m6WxHFW8cK9Og
+
+3. Effective Neural Solution for Multi-Criteria Word Segmentation
+https://mp.weixin.qq.com/s/Z4Ys16C66F52M44eyif6JQ
+本文提出了一种简洁优雅的多标准中文分词方案，可联合多个不同标准的语料库训练单个模型，同时输出多标准的分词结果。论文加了工程思想，用标签标识不同标准的数据集，这样就可以识别出自哪个标准的数据集。
