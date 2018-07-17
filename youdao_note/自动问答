@@ -1,0 +1,23 @@
+1.  DeepMind 提出了一个全新 阅读理解数据集 NarrativeQA。
+     https://mp.weixin.qq.com/s/FxrLxSp1Cd7w9i6xVqLJEw
+     机器需要面对的是一整部书籍或电影剧本，在没有限定答案范围的前提下，机器需要从文本中找到最相关的段落并且总结出问题的答案 DeepMind 提出了一个全新阅读理解数据集 NarrativeQA，机器需要面对的是一整部书籍或电影剧本，在没有限定答案范围的前提下，机器需要从文本中找到最相关的段落并且总结出问题的答案。
+
+2.  近期有哪些值得读的QA论文？
+https://mp.weixin.qq.com/s/XFovumX2PZ0cEpEsRCTE9w
+
+3. Learning Semantic Textual Similarity from Conversations
+本文来自 Google Research，文章提出使用对话数据+迁移学习（此处使用了 SNLI 数据集）来生成句向量，从而用于 QA 中 question rerank，answer rerank 和 sentence 相似度计算等任务中。
+
+4. An Attention Mechanism for Answer Selection Using a Combined Global and Local View
+    本文来自 Digitalgenius，提出用 attention 根据不同的输入粒度计算相似度，将答案的特定部分中的局部信息与整个问题的全局表示相结合。Answer selection 的关键就是文本相似度的计算，文章有可以学习的地方。
+
+5. 5 篇 AAAI 2018 论文看「应答生成」
+https://mp.weixin.qq.com/s/x8GwNyd9y7xqyi2KeIcqTw 
+
+6. QANet - Combining Local Convolution with Global Self-Attention for Reading Comprehension
+    本文是 CMU 和 Google Brain 发表于 ICLR 2018 的工作，SQuAD 目前并列第一，本文贡献如下：
+    1. 借鉴了 Attention is All You Need 里的想法，完全用 attention 加前馈来代替原先的结构，减少了计算量，加快了运算速度； 
+    2. 用了机器翻译预处理阅读理解的语料，增加了文本多样性，提高了实验效果。
+
+7. Personalizing Dialogue Agents: I have a dog, do you have pets too?
+本文是 Facebook AI Research 发表于 NIPS 2018 的工作。论文根据一个名为 PERSONA-CHAT 的对话数据集来训练基于 Profile 的聊天机器人，该数据集包含超过 16 万条对话。
