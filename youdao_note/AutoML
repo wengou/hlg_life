@@ -1,0 +1,7 @@
+1. 进化计算在深度学习中的应用
+    https://mp.weixin.qq.com/s/MCKkngSzzsABxyiGAFA1lg
+    一般而言，一个完整的机器学习（特别是监督式机器学习）工作流通常包含以下部分，数据清洗，特征工程，模型选择，训练测试以及超参数调优。每一道工序都有相当多的实现选项，且工序之间相互影响，共同决定最终的模型性能。
+    对于机器学习使用者而言，针对具体任务设计实现合适的工作流并不容易，在很多情况下可能会耗费大量的时间进行迭代。AutoML 的目标便是尽可能地使以上的过程自动化，从而降低使用者的负担。
+
+2. Accelerating Neural Architecture Search using Performance Prediction
+本文来自 MIT 和哈佛，论文针对 NN 的 AutoML 中遇到的 Early Stopping 问题，提出了一种新方法：用线性模型预测模型的最终训练结果。AutoML中，Hyperparameters 的搜索过程是一个 CPU Super Expensive 的过程，这个方法能够降低大约 50% 的搜索时间。
