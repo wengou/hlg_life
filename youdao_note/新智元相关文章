@@ -1,0 +1,116 @@
+1.  https://mp.weixin.qq.com/s/gJFwWnKn7BV_BcADu_vJCg    语义文本相似度   我们引入了一种新的方法来学习语义文本相似性的句子表示。基于的想法是：如果句子有相似的反应分布，那么它们在语义上是相似的。例如，“你多大了？”和“你的年龄是多少？”这两个问题都是关于年龄的问题，可以用类似的回答作为响应，比如“我20岁”。相比之下，“你好吗？”和“你多大了？”"包含几乎相同的单词，它们有非常不同的含义并会对应不同的响应。
+
+2.  https://mp.weixin.qq.com/s/QSGgvhkMUj3cXVlQwlzTFQ   【一文看懂】深度神经网络加速和压缩新进展年度报告  
+
+3.  https://mp.weixin.qq.com/s/5CNEa4gqM9gM9KHigiIZXA   优化深度学习计算效率
+
+4. https://mp.weixin.qq.com/s/a5cyjwZnUiM1wkkIrRW7BA    Ian Goodfellow：生成对抗网络 GAN 的公式是怎样推导出来的
+
+5. https://mp.weixin.qq.com/s/dGnQD-cO36tRvAdpiRb8tA    时间卷积网络（TCN）在 NLP 多领域发光，RNN 或将没落。  这实际上是 RNN 在内部设计上存在的一个问题。由于网络一次只读取、解析输入文本中的一个单词（或字符），深度神经网络必须等前一个单词处理完，才能进行下一个单词的处理。这意味着 RNN 不能像 CNN 那样进行大规模并行处理（massive parallel processing，MPP），特别是在 RNN/LSTM 对文本进行双向处理时。这也意味着 RNN 极度地计算密集，因为在整个任务运行完成之前，必须保存所有的中间结果。
+2017 年初，Google 和 Facebook 针对该问题提出了相似的解决方案——在机器翻译系统中使用 CNN，以便将大规模并行处理的优势发挥出来。在 CNN 中，计算不依赖于之前时间的信息，因此每个计算都是独立的，可以并行起来。
+
+6.  https://mp.weixin.qq.com/s/AupXIoVmhcOBrX1z1vgdtw   IJCAI Oral：弱监督实现精确目标检测 ， 训练一个高准确率的检测模型需要大量精细标注的图片数据，其成本很高。本文提出了一种弱监督协同学习框架，仅使用粗略标签的图片训练目标检测模型，测试结果显示其定位精确率和检测准确率均显著优于目前最先进的方法。
+
+7. https://mp.weixin.qq.com/s/i-udn1M4kiJpF8U7u5Uepg  专家解读DeepMind最新论文：深度学习模型复现大脑网格细胞，  AI 展现出与人脑 “网格细胞” 高度一致的空间导航能力， 甚至有些学者认为，凭着这篇论文，DeepMind 的作者有可能问鼎诺贝尔奖。
+
+8. https://mp.weixin.qq.com/s/Cb3C6Q5aWSjsNFs5hqD6kw   CVPR 2018：阿里提出应用 LocalizedGAN 进行半监督训练  
+
+9. https://mp.weixin.qq.com/s/PDeChj1hQqUrZiepxXODJg   ICLR oral：清华提出离散化架构WAGE，神经网络训练推理合二为一。感觉主要是模型压缩，   在深度学习领域，高精度意味着大面积、高功耗，从而导致高成本，这背离了嵌入式设备的需求，因此硬件加速器和神经形态芯片往往采用低精度的硬件实现方式。在低精度的算法研究方面，之前的工作主要集中在对前向推理网络的权重值和激活值的缩减，使之可以部署在硬件加速器和神经形态芯片上；而网络的训练还是借助于高精度浮点实现（GPU）。这种训练和推理的分离模式往往导致需要耗费大量的额外精力，对训练好的浮点网络进行低精度转换，这不仅严重影响了神经网络的应用部署，更限制了在应用端的在线改善。
+
+10. https://mp.weixin.qq.com/s/Ck_GDv1Xo-YMZcu-00gTOA   中星微夺冠国际人工智能算法竞赛，目标检测一步法精度速度双赢
+
+11.  https://mp.weixin.qq.com/s/VZpTHcFmSEkJhCVZbASf6g   【大咖解读】谢国彤：疾病预测的机器学习、深度学习和经典回归方法
+
+12. https://mp.weixin.qq.com/s/ANU_EnFlTXdQayFFuS4-4g   谷歌发布迄今最大注释图像数据集，190万图像目标检测挑战赛启动
+
+13. https://mp.weixin.qq.com/s/TrWwp-DBTrKqIT_Pfy_o5w   阿里妈妈首次公开新一代智能广告检索模型，重新定义传统搜索框架
+
+13. https://www.toutiao.com/a6557183859908149768/?tt_from=weixin&utm_campaign=client_share&timestamp=1526769599&app=news_article&utm_source=weixin&iid=32068549135&utm_medium=toutiao_android&wxshare_count=1     四种计算文本相似度的方法对比 
+
+13. https://www.toutiao.com/a6557182052360258051/?tt_from=weixin&utm_campaign=client_share&timestamp=1526769655&app=news_article&utm_source=weixin&iid=32068549135&utm_medium=toutiao_android&wxshare_count=1      机器学习项目到处都是坑？你需要谷歌的工程实践“葵花宝典”
+
+14.  https://mp.weixin.qq.com/s/JZufhZaAtKVaZMGNrYkUHA    LeCun最新演讲：深度学习大革命来了，可微分编程潜力巨大 
+
+15. https://mp.weixin.qq.com/s/33VKfq-jFHfn9GBQzFYq0Q   震撼！英伟达用深度学习做图像修复，毫无ps痕迹 , 他们发布了一种可以编辑图像或重建已损坏图像的深度学习方法，即使图像穿了个洞或丢失了像素。这是目前state-of-the-art的方法。
+
+15. https://mp.weixin.qq.com/s/QDhas7luP_5bA5xAMEcYiA  【入门必备】史上最全的深度学习资源汇总，速藏！ Tensorflow深度学习教程：https://github.com/nlintz/TensorFlow-Tutorials（更多Tensorflow学习的资源请参见这篇文章：【干货】史上最全的Tensorflow学习资源汇总       自然语言处理深度学习教程：http://www.socher.org/index.php/DeepLearningTutorial/DeepLearningTutorial   两个不错的Tensorflow中文视频资源：https://www.youtube.com/watch?v=eAtGqz8ytOI&list=PLjSwXXbVlK6IHzhLOMpwHHLjYmINRstrk，https://www.youtube.com/watch?v=TrWqRMJZU8A&list=PLwY2GJhAPWRcZxxVFpNhhfivuW0kX15yG&index=2
+
+16. https://mp.weixin.qq.com/s/qiKBqj5bSsx88St3g7ESYQ   生成式模型是无监督学习这一领域的一个重要话题。对于连续数据（如图片）的建模，自2014年生成式对抗网络（Generative Adversarial Network, GAN）发表以来，研究已取得了不少进展。然而，对于离散数据，特别是离散序列的建模与生成，针对这个问题的研究仍没有产生足够令人满意的突破。 
+
+17. https://mp.weixin.qq.com/s/BL1xZ_YuuPe9frIc9E1fkA  南开大学提出新物体分割评价指标，相比经典指标错误率降低 69.23% 
+
+18. https://mp.weixin.qq.com/s/ekKg46bQlWrlg9Hon01M5g   Hinton胶囊网络后最新研究：用“在线蒸馏”训练大规模分布式神经网络  
+
+18. https://mp.weixin.qq.com/s/RR3EEI8vm05EZSd7dGU__A    【干货】史上最全的Tensorflow学习资源汇总，速藏  
+
+18. https://mp.weixin.qq.com/s/9KAMTXvbZHzF58Evs9KlZw  开发者福利：TensorFlow中文社区论坛 （测试版） 正式上线！ 
+
+19. https://mp.weixin.qq.com/s/RP6LaK38IJhyQEVp6FDntw   【免费下载】迁移学习简明手册
+
+20. https://mp.weixin.qq.com/s/9xw-FwWEK9VI2wNzc8EhPA    【阿里算法天才盖坤】解读阿里深度学习实践，CTR 预估、MLR 模型、兴趣分布网络等  主要就介绍了一个Deep Interest network
+
+21.  Deep & Cross Network for Ad Click Predictions 
+
+22. https://mp.weixin.qq.com/s/_afSKRdag06VmGjM7VibBQ   【新智元干货】计算机视觉必读：目标跟踪、网络压缩、图像分类、人脸识别等， 里面提到如何用图像生成描述。 
+
+23.  Optimized Cost per Click in Taobao Display Advertising  决定如何扣费的 
+
+24. 爱奇艺，优酷等多家公司的排序思路， https://plushunter.github.io/2018/04/24/2018-04-24/ 
+
+25.  如何实现少样本学习？先让神经网络get√视觉比较能力     https://mp.weixin.qq.com/s/kTiQdoCI-mk8c-m0uL5BkQ  
+
+26.  Tree-CNN：一招解决深度学习中的「灾难性遗忘    https://mp.weixin.qq.com/s/FxrLxSp1Cd7w9i6xVqLJEw   深度学习领域一直存在一个比较严重的问题——“灾难性遗忘”，即一旦使用新的数据集去训练已有的模型，该模型将会失去对原数据集识别的能力。
+
+27. Evaluation of Session-based Recommendation Algorithms  
+   
+28. 复旦大学肖仰华教授：知识图谱与认知智能    https://mp.weixin.qq.com/s/C1kd8pD0yLu9nO9JVW1pEw    
+
+29.  如何走近深度学习人脸识别？你需要这篇超长综述   https://mp.weixin.qq.com/s/eZ78biXN-mVw3s9Ky_LBZg   
+
+30.  Demystifying Core Ranking in Pinterest Image Search  training data，user/image featurization 和 ranking models 等角度进行解读，并做了性能和质量方面的测试。
+
+31. Group Normalization  本文为 Kaiming He 新作。Batch-Norm 在深度学习中一直扮演着重要的角色，但 BN 也存在着明显的问题——需要足够大的 Batch Size，大大增加了训练的成本。本文提出了一种新的归一化——Group Norm 替代 BN，并且通过实验证明，在较小的 Batch Size 下，使用 GN 的网络最终得到的结果，要比使用BN的结果更好。
+
+32.  迁移学习简明手册  
+
+33.  自然语言处理中的自注意力机制（Self-Attention Mechanism）   https://mp.weixin.qq.com/s/BeELZ213kp67RrU-yem8rg  
+
+34.  经典论文解读 | 基于Freebase的问答研究   https://mp.weixin.qq.com/s/sCpKkkf2Tj37Nr5j7S7M6Q  
+
+35. 知识图谱数据构建的“硬骨头”，阿里工程师如何拿下？  https://mp.weixin.qq.com/s/ChQd9e-2SKPiBCdzBLs1QA 
+
+36. 2017年度最值得读的AI论文 | NLP篇 · 评选结果公布   https://mp.weixin.qq.com/s/nV95S1qIXhIFs58N9YOCKg  
+
+37. A Survey of Model Compression and Acceleration for Deep Neural Networks 
+
+38.  用好这几款炼丹利器，调参从此得心应手 | Let's Fork  https://mp.weixin.qq.com/s/EfqE3wbPRDffQKXTG4tdkQ 
+
+39.  「推荐系统」领域近期有哪些值得读的论文？  https://mp.weixin.qq.com/s/Ps-9qwFfhoMgV1SZOVqClw 
+
+40.  一文读懂「Attention is All You Need」 https://mp.weixin.qq.com/s/q3OVJypM6HZQc58JpKJgVA 
+
+41. FaceBook 的 Convolutional Sequence to Sequence Learning 
+
+42. 详解深度学习中的Normalization，不只是BN（1） https://mp.weixin.qq.com/s/KnmQTKneSimuOGqGSPy58w 
+
+43.  详解深度学习中的Normalization，不只是BN（2） https://mp.weixin.qq.com/s/nSQvjBRMaBeoOjdHbyrbuw 
+
+44. 9 篇顶会论文解读推荐中的序列化建模：Session-based Neural Recommendation  https://mp.weixin.qq.com/s/Oly-vWbCk4eoaS6t-jl1TQ
+
+45. 综述 | 一文读懂自然语言处理NLP  https://mp.weixin.qq.com/s/C_Yj3CuhRywr5TrrQnW9xQ
+
+46. 综述 | 知识图谱向量化表示 https://mp.weixin.qq.com/s/c-p5Fv5ebKHPY25HJu859A
+
+47. “阳奉阴违”的半监督学习算法 - Virtual Adversarial Training  https://mp.weixin.qq.com/s/1nqOI1Rhrb5KagdrxyGaXQ 
+
+48.  东南大学周张泉：基于知识图谱的推理技术  https://mp.weixin.qq.com/s/I4sfT8rlwXIXxEjfdQoFbA  
+
+49. 东南大学高桓：知识图谱表示学习  https://mp.weixin.qq.com/s/z1hhG4GaBQXPHHt9UGZPnA
+
+50. 东南大学漆桂林：知识图谱的应用  https://mp.weixin.qq.com/s/WIro7pk7kboMvdwpZOSdQA 
+
+
+
+
+
+
