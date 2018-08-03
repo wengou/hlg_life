@@ -1,1 +1,3 @@
-
+## Visualizing and Understanding Deep Neural Networks in CTR Prediction
+1) 观察每一隐层的神经元状态的平均波动程度来判断是否过拟合。过拟合前，神经元波动程度较稳定，且测试和训练集较一致。
+   过拟合后，波动程度加深，且训练集波动明显大于测试集。
