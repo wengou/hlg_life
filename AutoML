@@ -9,3 +9,6 @@
 ## Progressive Neural Architecture Search
 神经网络结构搜索是谷歌的AutoML的一个具体分支。约翰斯霍普金斯大学刘晨曦博士和Alan Yullie 教授，以及Google AI的李飞飞、
 李佳等多名研究者提出渐进式神经网络结构搜索技术，论文被ECCV 2018接收作为Oral。
+
+## 谷歌大脑开源TensorFuzz，自动Debug神经网络！
+Goodfellow表示，希望这将成为涉及ML的复杂软件回归测试的基础，例如，在推出新版本的网络之前，使用fuzz来搜索新旧版本之间的差异。
