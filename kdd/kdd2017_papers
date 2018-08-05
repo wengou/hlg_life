@@ -112,3 +112,67 @@ To precisely balance the supply and the demand of taxis, it is essential for the
 
 ## Google Vizier: A Service for Black-Box Optimization
 介绍Google如何进行参数调优
+
+## PNP: Fast Path Ensemble Method for Movie Design (辅助创作)
+ In this work, we seek to identify how we can design new movies with features tailored to a specific user population. We formulate the movie design as an optimization problem over the inference of user-feature scores and selection of the features that maximize the number of attracted users.
+在本文中，我们寻求识别怎样设计具有某些特性的电影来契合一个特定的人群。我们将电影设计建模为一个在推理user-feature score之上的优化问题，挑选那些最大吸引用户的特征。
+
+## Quick Access: Building a Smart Experience for Google Drive
+
+## Deep Embedding Forest: Forest-based Serving with Deep Embedding Features
+DNN是computational复杂的，但可以extract high level embedding vectors from low level features。Tree计算复杂度低，但依赖于特征，本文就是将两者结合了起来
+
+## Deep forest: Towards an alternative to deep neural networks
+https://blog.csdn.net/guoyuhaoaaa/article/details/78822236
+## Autoencoder by forest
+## Multi-Layered Gradient Boosting Decision Trees
+周志华的深度森林
+
+## KunPeng: Parameter Server based Distributed Learning Systems and Its Applications in Alibaba and Ant Financial
+
+## HinDroid: An Intelligent Android Malware Detection System Based on Structured Heterogeneous Information Network
+恶意软件检测
+
+## Compass: Spatio Temporal Sentiment Analysis of US Election (Application 美国选举)
+
+## Guided Deep List: Automating the Generation of Epidemiological Line Lists from Open Sources (Application 流行病list)
+
+## Predicting Clinical Outcomes Across Changing Electronic Health Record Systems(Application 医疗)
+
+## Prognosis and Diagnosis of Parkinson’s Disease Using Multi-Task Learning (Application 医疗)
+
+## Using convolutional networks and satellite imagery to identify patterns in urban environments at a large scale (Application )
+
+## FIRST: Fast Interactive Attributed Subgraph Matching
+
+## Attention Is All You Need
+https://www.yiyibooks.cn/yiyibooks/Attention_Is_All_You_Need/index.html 
+
+## A Dirty Dozen: Twelve Common Metric Interpretation Pitfalls in Online Controlled Experiments
+
+## A Data Mining Framework for Valuing Large Portfolios of Variable Annuities (Application )
+
+## Developing a comprehensive framework for multimodal feature extraction (特征提取)
+
+## TFX: A TensorFlow-Based Production-Scale Machine Learning Platform 
+
+##  Backpage and Bitcoin: Uncovering Human Traffickers (Application)
+
+## Estimation of recent ancestral origins of individuals on a large scale
+
+## A Practical Exploration System for Search Advertising
+we describe an exploration system to address the cold ads problem
+
+## A Quasi-experimental Estimate of the Impact of P2P Transportation Platforms on Urban Consumer Patterns
+
+## Planning Bike Paths based on Sharing-Bikes' Trajectories
+
+## Automated Categorization of Onion Sites for Analyzing the Darkweb Ecosystem
+
+## Matching Restaurant Menus to Crowdsourced Food Data, A Scalable Machine Learning Approach
+将正式的结构化的餐厅菜单项映射到从众包收集来的不是那么结构化的food items
+We study the problem of how to match a formally structured restaurant menu item to a large database of less structured food items that has been collected via crowd-sourcing
+
+## Dispatch with Confidence: Integration of machine learning, Optimization and Simulation for Open Pit Mines
+
+## Learning to Generate Rock Descriptions from Multivariate Well Logs with Hierarchical Attention
