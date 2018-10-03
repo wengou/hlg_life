@@ -8,3 +8,11 @@ https://blog.csdn.net/u014380165/article/details/75676216
 ## SPN
 spatial transform network
 https://blog.csdn.net/u011961856/article/details/77920970
+
+
+[2] Li, Fu, et al. "Temporal modeling approaches for large-scale youtube-8m video understanding." arXiv preprint arXiv:1707.04555 (2017).
+[3] Miech, Antoine, Ivan Laptev, and Josef Sivic. "Learnable pooling with Context Gating for video classification." arXiv preprint arXiv:1706.06905 (2017).
+[4] Arandjelovic, Relja, et al. "NetVLAD: CNN architecture for weakly supervised place recognition." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2016.
+[5] Jégou, Hervé, et al. "Aggregating local descriptors into a compact image representation." Computer Vision and Pattern Recognition (CVPR), 2010 IEEE Conference on. IEEE, 2010.
+[6] Wang, He-Da, Teng Zhang, and Ji Wu. "The monkeytyping solution to the youtube-8m video understanding challenge." arXiv preprint arXiv:1706.05150 (2017).
+[7] Lee, Joonseok, et al. "Collaborative Deep Metric Learning for Video Understanding." (2018).
