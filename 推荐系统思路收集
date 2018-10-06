@@ -17,3 +17,7 @@
 通过类似于矩阵分解的 squared loss 就能很好的从已有的历史数据中学出用户和商品在这个低维空间的位置。 
 Metric Factorization 可以用在评分预测和排序两个经典的推荐场景，并且都取得了 state-of-the-art 的结果，
 超过基于深度学习以及已有的 Metric learning 的推荐算法。
+
+## Collaborative Memory Network for Recommendation Systems(改进协同过滤，新思路Memory network)
+本文是圣塔克拉拉大学和 Google 联合发表于 SIGIR 2018 的工作。在传统的协同过滤模型中，隐藏因子模型能够捕捉交互的全局特征，
+基于近邻的相似度模型能够捕捉交互的局部特征。本文将两类协同过滤模型进行统一，根据注意力机制和记忆模块刻画复杂的用户-物品交互关系。
