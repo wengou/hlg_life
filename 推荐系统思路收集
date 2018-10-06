@@ -46,3 +46,7 @@ Metric Factorization 可以用在评分预测和排序两个经典的推荐场�
 ## Real-time Personalization using Embeddings for Search Ranking at Airbnb (一个新颖的思路)
 本文是 Airbnb 团队发表于 KDD 18 的工作，摘得 Applied Data Science Track Best Paper 奖项。论文介绍了 Airbnb 利用 word embedding 
 的思路训练 Listing（也就是待选择的民宿房间）和用户的 embedding 向量，并在此基础上实现相似房源推荐和实时个性化搜索。
+
+## Billion-scale Commodity Embedding for E-commerce Recommendation in Alibaba (一个新颖的思路)
+本文是阿里巴巴和香港科技大学发表于 SIGKDD 2018 的工作，论文结合节点 side information，解决了图表示学习中稀疏性和冷启动问题，
+在电商 i2i 推荐上取得很好的效果。
