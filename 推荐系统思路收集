@@ -75,10 +75,13 @@ Metric Factorization 可以用在评分预测和排序两个经典的推荐场�
 并给出较为简洁的实现方式。使用类似 Google 的 self-attention 机制去除 CNN、LSTM 的限制，让网络训练和预测速度变快的同时，
 效果还可以略有提升。 此框架便于扩展。可以允许更多不同类型的行为数据接入，同时提供多任务学习的机会，来弥补行为稀疏性。
 
-## A Multi-task Learning Approach for Improving Product Title Compression with User Search Log Data
+20. ## A Multi-task Learning Approach for Improving Product Title Compression with User Search Log Data
 本文是阿里发表于 AAAI 2018 的工作，论文利用用户搜索日志进行多任务学习以压缩商品标题，生成的商品短标题在离线自动评测、
 人工评测以及在线评测中均超过传统抽取式摘要方法。端到端的训练方式避免了传统方法的大量人工预处理以及特征工程。
 多任务学习中的 Attention 分布一致性设置使得最终生成的商品短标题中能透出原始标题中重要的词，尤其是能引导成交的核心词，
 对于其他电商场景也有重要意义。
 
-## Adversarial Network Embedding
+21. ## Adversarial Network Embedding
+
+22. ## 网络表示学习综述：一文理解Network Embedding
+https://mp.weixin.qq.com/s/luSTZVzaK6fPw4veIDuMwg
