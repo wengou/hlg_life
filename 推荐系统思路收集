@@ -5,3 +5,15 @@
 ## Diversity in recommender systems – A survey
 
 ## A review on deep learning for recommender systems: challenges and remedies (推荐系统2018年8月的survey)
+
+## Next Item Recommendation with Self-Attention
+本文提出了一种基于 self-attention 的基于序列的推荐算法，该算法是用 self-attention 从用户的交互记录中自己的去学习用的近期的兴趣，同时该模型
+也保留了用户的长久的兴趣。
+
+## Metric Factorization: Recommendation beyond Matrix Factorization(这可能是一个新颖的思路)
+本文提出了一种新型的推荐系统算法——Metric Factorization（距离分解）， 该方法旨在改进传统的基于矩阵分解的推荐系统算法。
+矩阵分解一个很大的问题就是不符合 inequality property， 这很大程度上阻碍了其表现。 
+本文提出新型的解决方案，通过把用户和商品看作是一个低纬空间里面的点，然后用他们之间的距离来表示他们的距离。
+通过类似于矩阵分解的 squared loss 就能很好的从已有的历史数据中学出用户和商品在这个低维空间的位置。 
+Metric Factorization 可以用在评分预测和排序两个经典的推荐场景，并且都取得了 state-of-the-art 的结果，
+超过基于深度学习以及已有的 Metric learning 的推荐算法。
