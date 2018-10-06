@@ -85,3 +85,6 @@ Metric Factorization 可以用在评分预测和排序两个经典的推荐场�
 
 22. ## 网络表示学习综述：一文理解Network Embedding
 https://mp.weixin.qq.com/s/luSTZVzaK6fPw4veIDuMwg
+
+23. 基于GRU和am-softmax的句子相似度模型 
+https://mp.weixin.qq.com/s/tanYrVCoGIMAk1TqEsbHFA
