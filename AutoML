@@ -12,3 +12,6 @@
 
 ## 谷歌大脑开源TensorFuzz，自动Debug神经网络！
 Goodfellow表示，希望这将成为涉及ML的复杂软件回归测试的基础，例如，在推出新版本的网络之前，使用fuzz来搜索新旧版本之间的差异。
+
+## 近期大热的AutoML领域，都有哪些值得读的论文？
+https://mp.weixin.qq.com/s/3njCAKQsQ8UhL3gqDDHZGQ
