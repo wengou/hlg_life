@@ -1,16 +1,16 @@
-## 想了解推荐系统最新研究进展？请收好这16篇论文
+1. ## 想了解推荐系统最新研究进展？请收好这16篇论文
 1) https://mp.weixin.qq.com/s/3NStfKyn3rGmLUrgk4b9lQ
 2) paperweekly 2018.09.30推荐的论文
 
-## Diversity in recommender systems – A survey
+2. ## Diversity in recommender systems – A survey
 
-## A review on deep learning for recommender systems: challenges and remedies (推荐系统2018年8月的survey)
+3. ## A review on deep learning for recommender systems: challenges and remedies (推荐系统2018年8月的survey)
 
-## Next Item Recommendation with Self-Attention
+4. ## Next Item Recommendation with Self-Attention
 本文提出了一种基于 self-attention 的基于序列的推荐算法，该算法是用 self-attention 从用户的交互记录中自己的去学习用的近期的兴趣，同时该模型
 也保留了用户的长久的兴趣。
 
-## Metric Factorization: Recommendation beyond Matrix Factorization(这可能是一个新颖的思路)
+5. ## Metric Factorization: Recommendation beyond Matrix Factorization(这可能是一个新颖的思路)
 本文提出了一种新型的推荐系统算法——Metric Factorization（距离分解）， 该方法旨在改进传统的基于矩阵分解的推荐系统算法。
 矩阵分解一个很大的问题就是不符合 inequality property， 这很大程度上阻碍了其表现。 
 本文提出新型的解决方案，通过把用户和商品看作是一个低纬空间里面的点，然后用他们之间的距离来表示他们的距离。
@@ -18,59 +18,59 @@
 Metric Factorization 可以用在评分预测和排序两个经典的推荐场景，并且都取得了 state-of-the-art 的结果，
 超过基于深度学习以及已有的 Metric learning 的推荐算法。
 
-## Collaborative Memory Network for Recommendation Systems(改进协同过滤，新思路Memory network)
+6. ## Collaborative Memory Network for Recommendation Systems(改进协同过滤，新思路Memory network)
 本文是圣塔克拉拉大学和 Google 联合发表于 SIGIR 2018 的工作。在传统的协同过滤模型中，隐藏因子模型能够捕捉交互的全局特征，
 基于近邻的相似度模型能够捕捉交互的局部特征。本文将两类协同过滤模型进行统一，根据注意力机制和记忆模块刻画复杂的用户-物品交互关系。
 
-## Evaluation of Session-based Recommendation Algorithms(评估各种session based的推荐方法)
+7. ## Evaluation of Session-based Recommendation Algorithms(评估各种session based的推荐方法)
 本文系统地介绍了 Session-based Recommendation，主要针对 baseline methods, nearest-neighbor techniques, recurrent neural networks, 
 和 (hybrid) factorization-based methods 等 4 大类算法进行介绍。
 
-## RippleNet: Propagating User Preferences on the Knowledge Graph for Recommender Systems (利用知识图谱来推荐，新思路)
+8. ## RippleNet: Propagating User Preferences on the Knowledge Graph for Recommender Systems (利用知识图谱来推荐，新思路)
 本文是上海交大、微软亚洲研究院和香港理工大学联合发表于 CIKM 2018 的工作。为了解决协同过滤的稀疏性和冷启动问题，
 研究人员通常利用社交网络或项目属性等辅助信息来提高推荐效果。本文将知识图谱应用到推荐系统中，是一个很新颖的方法，给推荐系统提供了一个全新的思路。
 
-## Content-Based Citation Recommendation
+9. ## Content-Based Citation Recommendation
 本文提出了一种基于文章表示学习的方法，在为学术论文进行引文推荐任务上取得了较大成效。将给定的查询文档嵌入到向量空间中，
 然后将其邻近选项作为候选，并使用经过训练的判别模型重新排列候选项，以区分观察到的和未观察到的引用。此外，本文还发布了一个包含 700 万篇研究
 文章的公开数据集。
 里面可以借鉴的是将文章表示学习的方法
 
-## Explainable Recommendation: A Survey and New Perspectives(可解释性)
+10. ## Explainable Recommendation: A Survey and New Perspectives(可解释性)
 
-## STAMP: Short-Term Attention/Memory Priority Model for Session-based Recommendation (Session-based Recommendation)
+11. ## STAMP: Short-Term Attention/Memory Priority Model for Session-based Recommendation (Session-based Recommendation)
 本文是电子科大发表于 KDD 2018 的工作。论文提出了一种短期注意力/记忆优先的网络模型，在建模长时间序列的用户点击行为时，
 着重加强用户近期行为的影响。该方法既考虑了从长期历史行为挖掘用户的一般兴趣，又考虑了用户上一次点击挖掘用户的即时兴趣。
 实验表明，本文工作在 CIKM16 和 RSC15 两个经典数据集上均达到了最优结果。
 
-## Real-time Personalization using Embeddings for Search Ranking at Airbnb (一个新颖的思路)
+12. ## Real-time Personalization using Embeddings for Search Ranking at Airbnb (一个新颖的思路)
 本文是 Airbnb 团队发表于 KDD 18 的工作，摘得 Applied Data Science Track Best Paper 奖项。论文介绍了 Airbnb 利用 word embedding 
 的思路训练 Listing（也就是待选择的民宿房间）和用户的 embedding 向量，并在此基础上实现相似房源推荐和实时个性化搜索。
 
-## Billion-scale Commodity Embedding for E-commerce Recommendation in Alibaba (一个新颖的思路)
+13. ## Billion-scale Commodity Embedding for E-commerce Recommendation in Alibaba (一个新颖的思路)
 本文是阿里巴巴和香港科技大学发表于 SIGKDD 2018 的工作，论文结合节点 side information，解决了图表示学习中稀疏性和冷启动问题，
 在电商 i2i 推荐上取得很好的效果。
 
-## Sequential Recommendation with User Memory Networks (Memory network)
+14. ## Sequential Recommendation with User Memory Networks (Memory network)
 本文是清华大学发表于 WSDM 2018 的工作。现有的深度学习推荐模型通常把用户的历史记录编码成一个 latent vector，
 但是可能会丢失 per-item 的共现信息。本文提出一种记忆增强的神经网络，把用户历史存到 memory 里，并设计了 read/write 机制更新 memory 内容，
 使序列网络能更动态地记录用户历史信息。
 
-## Aesthetic-based Clothing Recommendation (新思路，对图片引入美学特征)
+15. ## Aesthetic-based Clothing Recommendation (新思路，对图片引入美学特征)
 本文是清华大学发表于 WWW 18 的工作，论文利用图片增强效果，传统的方法只考虑 CNN 抽取的图像特征；
 而本文考虑了图片中的美学特征对于推荐的影响；作者利用 BDN 从图片中学习美学特征，然后将其融合到 DCF 中，
 增强用户-产品，产品-时间矩阵，从而提高了推荐效果；在亚马逊和 AVA 数据集上都取得了良好的效果。
 
-## Multi-Pointer Co-Attention Networks for Recommendation
+17. ## Multi-Pointer Co-Attention Networks for Recommendation
 本文是南洋理工大学发表于 KDD 2018 的工作。在预测用户对商品的评分时，如何学习用户和商品的表示至关重要。
 本文基于协同注意力机制，在 review-level 和 word-level 对用户评论和与商品相关的评论进行选择，
 选择最重要的一条或若干条评论来对用户和商品进行表示。
 
-## Deep Matrix Factorization Models for Recommender Systems
+18. ## Deep Matrix Factorization Models for Recommender Systems
 本文在利用深度学习做推荐时，考虑了推荐的显式反馈和隐式反馈，将其融合构建成一个矩阵，从而将用户和产品的不同向量输入到两个并行的深层网络中去。
 最后，设计了一种新型的损失函数以同时考虑评分和交互两种不同类型的反馈数据。
 
-## ATRank: An Attention-Based User Behavior Modeling Framework for Recommendation(新思路，融合多种时序行为)
+19. ## ATRank: An Attention-Based User Behavior Modeling Framework for Recommendation(新思路，融合多种时序行为)
 本文来自阿里巴巴，论文尝试设计和实现了一种能够融合用户多种时序行为数据的方法，较为创新的想法在于提出了一种同时考虑异构行为和时序的解决方案，
 并给出较为简洁的实现方式。使用类似 Google 的 self-attention 机制去除 CNN、LSTM 的限制，让网络训练和预测速度变快的同时，
 效果还可以略有提升。 此框架便于扩展。可以允许更多不同类型的行为数据接入，同时提供多任务学习的机会，来弥补行为稀疏性。
