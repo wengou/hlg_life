@@ -66,6 +66,10 @@ Metric Factorization 可以用在评分预测和排序两个经典的推荐场�
 本文基于协同注意力机制，在 review-level 和 word-level 对用户评论和与商品相关的评论进行选择，
 选择最重要的一条或若干条评论来对用户和商品进行表示。
 
+## Deep Matrix Factorization Models for Recommender Systems
+本文在利用深度学习做推荐时，考虑了推荐的显式反馈和隐式反馈，将其融合构建成一个矩阵，从而将用户和产品的不同向量输入到两个并行的深层网络中去。
+最后，设计了一种新型的损失函数以同时考虑评分和交互两种不同类型的反馈数据。
+
 ## ATRank: An Attention-Based User Behavior Modeling Framework for Recommendation(新思路，融合多种时序行为)
 本文来自阿里巴巴，论文尝试设计和实现了一种能够融合用户多种时序行为数据的方法，较为创新的想法在于提出了一种同时考虑异构行为和时序的解决方案，
 并给出较为简洁的实现方式。使用类似 Google 的 self-attention 机制去除 CNN、LSTM 的限制，让网络训练和预测速度变快的同时，
