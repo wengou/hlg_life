@@ -42,3 +42,7 @@ Metric Factorization 可以用在评分预测和排序两个经典的推荐场�
 本文是电子科大发表于 KDD 2018 的工作。论文提出了一种短期注意力/记忆优先的网络模型，在建模长时间序列的用户点击行为时，
 着重加强用户近期行为的影响。该方法既考虑了从长期历史行为挖掘用户的一般兴趣，又考虑了用户上一次点击挖掘用户的即时兴趣。
 实验表明，本文工作在 CIKM16 和 RSC15 两个经典数据集上均达到了最优结果。
+
+## Real-time Personalization using Embeddings for Search Ranking at Airbnb (一个新颖的思路)
+本文是 Airbnb 团队发表于 KDD 18 的工作，摘得 Applied Data Science Track Best Paper 奖项。论文介绍了 Airbnb 利用 word embedding 
+的思路训练 Listing（也就是待选择的民宿房间）和用户的 embedding 向量，并在此基础上实现相似房源推荐和实时个性化搜索。
