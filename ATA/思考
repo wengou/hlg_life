@@ -9,4 +9,11 @@
      [2] weighted加权，乘上一个因子加权， 这个对商品有一定的区分度，原来ctr高的商品获得的影响也要大一些，这个效果比1好 [3] logitboost，
      根据ctr反推，logit乘以一个权重，再计算初ctr.
      
-2. 
+2. 125652
+1) 第一代Query改写方法为SimRank++，其缺陷为主要考虑query和bidword之间的语义相关性，而未考虑bidword侧的流量机制，难以释放营收潜力。
+2) 第二代参照雅虎的论文，Optimizing Query Rewrites For Keyword-based Advertising, 直接计算Query对应的优质广告集合，再反过来选取bidword，
+实现了对广告的最大覆盖。该算法存在的缺陷，将整个Query视作一个整体，同时其原理是基于统计的记忆模型
+3）第三代是DeepNB，对query进行分词处理，获取词对应的Embedding，将该Embedding一方面取平均，另一方面交给cnn捕获n-gram信息，cnn后接Attention网络，
+   对于。 同时将头部query的ID直接Embedding，这是为了记住头部query的特性。将用户的信息也放进去，实现个性化的query改写。
+   基于上面三个向量加权和再接三层FC。 bidword就直接根据ID embedding，然后计算DSSM。
+4) 
