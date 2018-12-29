@@ -16,4 +16,5 @@
 3）第三代是DeepNB，对query进行分词处理，获取词对应的Embedding，将该Embedding一方面取平均，另一方面交给cnn捕获n-gram信息，cnn后接Attention网络，
    对于。 同时将头部query的ID直接Embedding，这是为了记住头部query的特性。将用户的信息也放进去，实现个性化的query改写。
    基于上面三个向量加权和再接三层FC。 bidword就直接根据ID embedding，然后计算DSSM。
-4) 
+4) 训练样本如何得到，如果将query点击过的广告的bidword都保留，样本就太多了，因此price(ad, bidword) / log(bidword的广告数 + 1)，
+    用该分数对该广告下所有bid算分，进而计算百分比。 
