@@ -22,3 +22,11 @@
 3. 125424
 1) 关于Attention GRU的改进思路可以借鉴：[1] 不同的行为有不同的权重，加购的权重比点击的权重要更大，因此对原lstm的d维的hidden state
    重新做了一个投影(用一个d*d维的矩阵) [2] 引入时间衰减因子，不同时间的行为对当前的影响也不同。[3] 排序的时候要考虑trigger item的信息。
+   
+4. 121438
+1) 基于异构网络元路径embedding表征的大规模关键词推荐
+2) 所做的事情就是在手淘的搜索框中，推荐默认的搜索词，做法是采用基于异构网络元路劲法
+3) 具体做法：构建user-item-query的异构网络， 为每种类型的节点构造多条元路径，比如对user可以构造metapath1: user->item->query(用户点击过的商品，
+    商品主要被哪些query引导)，也可以构建metapath2: user->query->item(用户的搜索query，query下点击的最多的item)。 
+    对query和item的最开始的表示是基于分词后的term的embedding直接平均，然后对metapath1中的item，根据query来获得，user根据item来获得。
+    对metapath2中的query根据item来获得，user跟军query来获得。 所以最原始的参数就是term对应的embbeding参数，这样做可以减少参数量。
