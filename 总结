@@ -35,3 +35,10 @@
 3) 本文的主要思想，将使用评分矩阵的行作为用户特征输入到一个神经网络Net1中，将评分矩阵的列作为item特征输入到神经网络Net2中，然后计算net1和net2的余弦相似度
 4) 为同时引入显示反馈和隐式反馈，隐式反馈是通过logloss引入进来的，显示反馈通过将评分除以最大评分正则化0~1之间，再使用交叉熵引入进来
 
+## NCF（Neural Collaborative Filtering）
+1) https://www.cnblogs.com/HolyShine/p/6728999.html
+2) https://blog.csdn.net/stalbo/article/details/79431662
+3) 动机：原有的MF形式过于简单，会导致节点的放置位置不合适，让不相近的点靠在一起，如果增加embedding的维度，则可能会导致过拟合，因此引入NCF。
+4) NCF采用了两个网络，一个网络是GMF，获取了User Embedding, Item Embedding后进行ElementWise的乘积，然后接一层神经网络和一个激活函数，
+   另一个是将Embedding comcat起来，然后接几层神经网络，再将这两个网络concat起来接一个一层的神经网络。
+5) 疑问：如何将其用于召回
