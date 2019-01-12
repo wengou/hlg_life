@@ -43,3 +43,5 @@
    另一个是将Embedding comcat起来，然后接几层神经网络，再将这两个网络concat起来接一个一层的神经网络。
 5) 疑问：如何将其用于召回
 6) 改进版本：Self-Attentive Neural Collaborative Filtering
+
+## Deep Learning for Matching in Search and Recommendation(召回的好资料)
