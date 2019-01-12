@@ -29,3 +29,9 @@
    
 ## DCN模型详解
 
+## DEEPMF
+1) https://zhuanlan.zhihu.com/p/32127194
+2) Deep Matrix factorization Models for Recommender System
+3) 本文的主要思想，将使用评分矩阵的行作为用户特征输入到一个神经网络Net1中，将评分矩阵的列作为item特征输入到神经网络Net2中，然后计算net1和net2的余弦相似度
+4) 为同时引入显示反馈和隐式反馈，隐式反馈是通过logloss引入进来的，显示反馈通过将评分除以最大评分正则化0~1之间，再使用交叉熵引入进来
+
