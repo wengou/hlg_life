@@ -37,3 +37,11 @@
    要么整体不感兴趣，因此建树的时候，兄弟节点间应该是不同的类。
 3) 训练的时候，将用户当天行为的叶子节点(购买,点击)以及其所有祖先节点作为正例，其它同层的兄弟节点左右负样本。
 4) 里面提到关于树构建的思路比较有借鉴意义，先基于原始的商品树进行训练，得到每个节点的向量，然后再对向量使用kmeans重新聚类。 
+
+6. 127256
+1) 迁移学习的有效性很大程度上取决于source domain和target domain之间的差异，如果差异很大，则迁移很可能是无效的。
+2) 避免domain gap的方法通常使用样本迁移，找出合适的源样本去帮助target domain。该论文使用强化学习来提升样本迁移能力，找出合适的样本来帮助target domain
+3) 论文Learning to selectively Transfer: Reinforced Transfer Learning for Deep Text Matching
+4) 关于强化学习部分，对于source domain里的每个样本，RL会做一个action(选或者不选)，每个batch都有一个immediate reward r。对每个样本，其state由三个
+部分组成，TL模型学到的表示h，源模型loss, target模型loss，源模型的prediction，target模型的prediction
+5) Ruder and Plank提出了基于贝叶斯方法的样本选择算法，Learning to Select Data for Transfer Learning With Bayesian Optimization
