@@ -79,3 +79,13 @@ SimHash + 简单共有词相似度即可。
  3) 因此一个思路是，先找出query下那些效果好的广告，然后再找出对应的bid。
  4) Yahoo有一篇类似的思路是，Optimizing Query Rewrite for Keyword-Based Advertising
  5) 有一篇衡量语义相关性的资料Simrank++: Query Rewriting through link analysis of the click graph
+ 
+ 12. 125262
+ 1) NodeBidding存在如下的问题，[1]将query看做一个不可分割的graph node，比如大码女装和胖mm衣服从语义上来说是接近的，但NodeBidding将其
+ 视作两个不同的词。[2] NodeBidding本质上基于统计的，因此在长尾流量上挖掘出高置信度的query改写比较困难。
+ 2) DeepNB模型使用了词的信息，对左侧的query，使用了词的embedding，基于词的embedding一个是average pooling，另一个是先做卷积，卷积可以捕获
+    n-gram的信息，卷积以后引入了Attention based pooling。
+ 3) 关于样本的获取，没有query和bid word的直接label，通过query下点击的ads对应的bid来获取正样本，为了减少样本量，对广告所有bid word采样，正比于该
+ 4) bid的price，反比于log(bid_ads_count + 1)，负样本是从由易到难各级别query都有，包括不同根目录下广告购买的bidword,
+    不同叶子类目下广告购买的bidword, 同一广告下q值偏小的bidword，同一广告下q值偏大的bidword。
+ 
