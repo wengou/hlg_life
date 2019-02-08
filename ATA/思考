@@ -72,3 +72,9 @@ SimHash + 简单共有词相似度即可。
  2) 使用多个Attention的目的是，不同的语义空间，不同的视角来看待问题。如果都简单的只在单一维度看问题，会导致类似语义中和的现象。
     比如"宝马"和"战车"，以及"宝马"和"奔驰"其实是不同的语义。
  3) 为了强迫从不同的视角看问题，强迫Attention的权重系数必须不一样，因此引入了|| A*A` - I ||这个机制范数。
+ 
+ 11. 55560
+ 1) 关于Query改写，原来传统的路子是f(P(bi|q)*f(ai|bi, q))~f(P(bi|q)*f(ai|bi))。
+ 2) 但其实用户在query是否点击某个广告和bid没有任何关系，query->bid->ad的三级跳只是商业模式而已。
+ 3) 因此一个思路是，先找出query下那些效果好的广告，然后再找出对应的bid。
+ 4) Yahoo有一篇类似的思路是，Optimizing Query Rewrite for Keyword-Based Advertising
