@@ -78,3 +78,4 @@ SimHash + 简单共有词相似度即可。
  2) 但其实用户在query是否点击某个广告和bid没有任何关系，query->bid->ad的三级跳只是商业模式而已。
  3) 因此一个思路是，先找出query下那些效果好的广告，然后再找出对应的bid。
  4) Yahoo有一篇类似的思路是，Optimizing Query Rewrite for Keyword-Based Advertising
+ 5) 有一篇衡量语义相关性的资料Simrank++: Query Rewriting through link analysis of the click graph
