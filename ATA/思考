@@ -106,5 +106,14 @@ SimHash + 简单共有词相似度即可。
   异构网络来完成召回的。Meta-graph based recommendation fusion over heterogeneous information networks.
   6) 在排序模型中，使用了一个Attention-GRU的思路，除了Attention-GRU的思路，不同类型的行为的影响不一样，为每种类型的行为弄了一个d*d维的M矩阵，
   将原来rnn里的hidden state乘以投影矩阵。另外，hidden state还要再乘以一个时间衰减因子。
-  ，
- ,
+  
+  16. 124362
+  1) 对于单个item总共有id, title, image, statistic几个不同维度的特征，对每个特征都会提取出模态不变性特征和模态独特性特征。我理解为什么要
+  对特征抽取不变性特征和独特性特征，便于后续对模态独特性特征进行Attention。多种模态特征可能包含不利于区分不同模态的贡献的冗余信息。
+  在计算模态的不同贡献时，应该消除冗余特征。
+  2) 论文对每种特征都提取出模态独特的embedding和模态共享的embedding。共享的embedding是对所有模态使用相同的投影矩阵来获得。
+     独特embedding会用attention将不同模态的独特embedding融合起来。计算attention分数的时候，除了输入模态的embedding，还需要
+     使用category的embedding。
+  3) 用户历史行为使用gru串联起来，gru的更新门里把行为属性的embedding也考虑进来了，包括(距离现在的时间，以及行为类型的embedding)。
+独特
+
