@@ -88,4 +88,18 @@ SimHash + 简单共有词相似度即可。
  3) 关于样本的获取，没有query和bid word的直接label，通过query下点击的ads对应的bid来获取正样本，为了减少样本量，对广告所有bid word采样，正比于该
  4) bid的price，反比于log(bid_ads_count + 1)，负样本是从由易到难各级别query都有，包括不同根目录下广告购买的bidword,
     不同叶子类目下广告购买的bidword, 同一广告下q值偏小的bidword，同一广告下q值偏大的bidword。
+    
+  13. 127743
+  1) 关于Mutlitask-Learning，如果多个task之间存在较大的差异，论文实现了一种Go-MTL，定义k个basic task，使用这k个basic task来做线性组合
+  2) 
+  
+  14. 127927
+  1） 召回优化:[1] 使用RandomWalk, Word2Vec, Similarity来增加i2i召回的比例，减少热门打底的数量; [2] 进一步引入了DeepMatch来扩充i2i的数量；
+      [3] 80%的top2,top3 item是根据shop2i召回的样本，这部分样本的ctr不高，因此开发了Shop-inside的i2i，估计是shop2item + swing i2i搞定
+      
+  15. 125424
+  1) 关于交互式推荐，KDD2018的资料 A Two-Stage Approach toward Interactive Recommendation
+  2) 所谓交互式，就是根据用户浏览的item生成一个问题，根据用户的反馈获取用户的即时兴趣，进而进行后续的推荐。
+  3) 在本文中，交互推荐的问题产生是以推荐关键词的方式来完成的，关键词的候选是来自搜索词。
+  4) 
  
