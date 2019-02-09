@@ -101,5 +101,10 @@ SimHash + 简单共有词相似度即可。
   1) 关于交互式推荐，KDD2018的资料 A Two-Stage Approach toward Interactive Recommendation
   2) 所谓交互式，就是根据用户浏览的item生成一个问题，根据用户的反馈获取用户的即时兴趣，进而进行后续的推荐。
   3) 在本文中，交互推荐的问题产生是以推荐关键词的方式来完成的，关键词的候选是来自搜索词。
-  4) 
- 
+  4) 用户点击了某个关键词，则认为用户对该关键词感兴趣，否则就是对该关键词不感兴趣。将点击的关键词作为特征输入到模型中，就是标准的搜索流程了。
+  5) 关键词推荐的召回，通过u2i2q, u2i2scene2q, u2i2c2q, 作者是把user, query, item, scene, category都作为异构网络的节点放到异构网络中，通过
+  异构网络来完成召回的。Meta-graph based recommendation fusion over heterogeneous information networks.
+  6) 在排序模型中，使用了一个Attention-GRU的思路，除了Attention-GRU的思路，不同类型的行为的影响不一样，为每种类型的行为弄了一个d*d维的M矩阵，
+  将原来rnn里的hidden state乘以投影矩阵。另外，hidden state还要再乘以一个时间衰减因子。
+  ，
+ ,
