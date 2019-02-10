@@ -117,3 +117,10 @@ SimHash + 简单共有词相似度即可。
   3) 用户历史行为使用gru串联起来，gru的更新门里把行为属性的embedding也考虑进来了，包括(距离现在的时间，以及行为类型的embedding)。
 独特
 
+17. 121438
+1) 基于异构网络, 使用metapath来做召回;
+2) query, item, user是三种不同类型的节点，首先将这三种不同类型的节点全部用term的embedding表示，这样，这三种类型的节点就在相同的空间里。
+3) 使用类似于标签传播的方法，从metapath元路径的最后一层节点逐层往回传播。所谓metapath，就是一条定义好了各个节点类型的路径，比如user->item->query。
+4) 定义多条元路径，每条元路径都可以求得一个user embedding，取平均后就可以获得user的embedding。
+5) 获得的user metapath embedding和query metapath embedding当做特征输入到全连接网络里去。
+
