@@ -124,3 +124,7 @@ SimHash + 简单共有词相似度即可。
 4) 定义多条元路径，每条元路径都可以求得一个user embedding，取平均后就可以获得user的embedding。
 5) 获得的user metapath embedding和query metapath embedding当做特征输入到全连接网络里去。
 
+18. 73892
+1) 广告主指定宝贝ID，自动进行素材提取工作，尺寸适配，创意在线拼接工作;
+2) 模板库中有多种模板，自动实现素材和模板的匹配;
+3) 
