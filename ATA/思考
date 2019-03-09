@@ -130,4 +130,4 @@ SimHash + 简单共有词相似度即可。
 
 19. 124035
 1) 如何实现对新品的提速，主要就在于添加了User2New(User to New Item的 引导、收藏、加购、点击率、转化率等)，以及Query2New(Query to New Item)的引导、
-收藏、加购、点击率、转化率等。
+收藏、加购、点击率、转化率等。该特征除了加在Deep侧，也加在Wide侧和ItemId做交叉，实现快速记忆Item对哪些Query更敏感。
