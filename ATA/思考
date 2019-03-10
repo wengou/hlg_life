@@ -131,3 +131,15 @@ SimHash + 简单共有词相似度即可。
 19. 124035
 1) 如何实现对新品的提速，主要就在于添加了User2New(User to New Item的 引导、收藏、加购、点击率、转化率等)，以及Query2New(Query to New Item)的引导、
 收藏、加购、点击率、转化率等。该特征除了加在Deep侧，也加在Wide侧和ItemId做交叉，实现快速记忆Item对哪些Query更敏感。
+
+20. 125214
+1) 该文基于用户过去的点击序列进行召回。
+2) 点击序列使用双层LSTM来对过去点击过的item进行Embedding，一个技巧是双层LSTM之间添加dropout + 残差网络来防止过拟合;
+3) 点击序列经过LSTM Embedding后，使用Masked Multi-head Self-Attention进行处理，Attention是参照Attention is All you need的做法，在点击序列间
+进行Attention。Multi-head的结果concat起来，然后在用一个投影矩阵投影到低维空间。
+4) User基本信息怎样和点击序列融合在一起呢，这里也采用了Attention的机制，先将User的基本信息用全连接网络进行投影，投影到和点击序列相同的空间，然后
+再和点击序列的Embedding做Attention。
+5) 关于负样本的处理，根据商品的频次做负采样处理；关于正样本的处理，将后续几个点击样本都作为正样本， 变成Multi-Label的方式。
+6) 点击序列只是代表了用户的短期兴趣，要将用户的长期类目偏好，品牌品号，将这些兴趣Embedding后和UserEmbedding做Attention，得到用户的长期偏好，
+长期偏好和短期
+6) 点击序列只是代表了用户的短期兴趣，要将用户的长期类目偏好，品牌品号，将这些兴趣Embedding后和UserEmbedding做Attention，得到用户的长期偏好，长期偏好和
