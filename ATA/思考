@@ -32,5 +32,5 @@
    [1] 一共牵涉到3个模块，discriminative model, selection model, TL model;
    [2] discriminative model的目标是，区分选出来的来自于源域的样本与目标域的样本
    [3] selection model的目标包括两个，一个是discriminative model区分不出来的样本(这一部分是一个立即奖励，即为判别模型的对数似然)，
-       另一个是要使得TL模型在验证数据集上的loss变小(这是一个延迟奖励)
+       另一个是要使得TL模型在验证数据集上的loss变小(这是一个延迟奖励),
    [4] TL model就是普通的分类模型;
