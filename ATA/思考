@@ -45,5 +45,4 @@
 6) MAF网络的结构为，对每个模态，从初始的特征(如图像是vgg 4096维)进行投影得到s_m,然后使用类别的embedding和s_m一起计算element wise
    的attention a_score，然后将a_score乘以s_m
 7） DDMA的模型为，双对抗模型，D0使用c_m训练，得到每个c_m属于自身模态的概率d，1-d就是该模态里包含通用特征的degree；另一个判别器
-    D2，和通用投影层
-I
+    D2，和通用投影层I组成对抗网络，D2的目标是使得基于各模态提取的通用特征的Jensen-Shannon divergence最小，因此会强迫I提取通用特征。
