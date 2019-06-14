@@ -52,5 +52,7 @@
 2) 对于文本特征，使用了TextCnn中的bi-gram, tri-gram, four-gram, 后续再接两层全连接层;
 3) 对于图像特征，使用resnet 2048的表示进行处理，但由于一直不收敛，因此使用了端到端的resnet，该resnet基于淘宝叶子类目进行预训练。
    为减少图片存储量，先将图片用jpeg压缩，训练的时候解压缩。
-4) 损失函数使用pairwise的损失，pair的构建不是原来的随机挑选负样本，而是将相同叶子类目下的当做负样本。
-5) 
+4) 损失函数使用pairwise的损失，pair的构建不是原来的随机挑选负样本，而是将相同叶子类目下的当做负样本,这样有约2%的auc收益。
+5) 关于多模信息融合，参考论文tensor fusion network for multimodal sentiment analysis，使用各模态embeding的笛卡尔外积。
+6) 加入端到端的图像特征后，模型一直无法收敛(原因不明)，采用了如下的思路，[1] query和title使用DSSM网络，预先训练参数;
+   [2] query和图像特征单独训练，初始化模型; [3] 融合在一起后，交替训练title和图像特征；
