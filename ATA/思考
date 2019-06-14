@@ -46,3 +46,9 @@
    的attention a_score，然后将a_score乘以s_m
 7） DDMA的模型为，双对抗模型，D0使用c_m训练，得到每个c_m属于自身模态的概率d，1-d就是该模态里包含通用特征的degree；另一个判别器
     D2，和通用投影层I组成对抗网络，D2的目标是使得基于各模态提取的通用特征的Jensen-Shannon divergence最小，因此会强迫I提取通用特征。
+
+6. 125374
+1) 本文介绍了如何将多模信息融合在召回模型中;
+2) 对于文本特征，使用了TextCnn中的bi-gram, tri-gram, four-gram, 后续再接两层全连接层;
+3) 对于图像特征，使用resnet 2048的表示进行处理，但由于一直不收敛，因此使用了端到端的resnet，该resnet基于淘宝叶子类目进行预训练。
+   为
