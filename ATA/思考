@@ -62,3 +62,6 @@
 2) 提出的Trigger Selection Network本质上就是一个Self Attention的思路，一个亮点是对每个点击Item，会将其多个属性i分别拿出来做Self Attention 得到向量O_i，然后将每个属性的O_i，以及User Embeding Concat起来，再接一个全连接网络得到 User侧的Embedding向量。我觉得将每个属性i分别拿出来做Attention的好处是，分别得到每个粒度的兴趣，比全部糅合在一个item的表示里更好。
 3) 对每个属性i做Self Attention的思路是，对点击的每个商品j，得到该属性的embedding Item_i,j, 将Item_i,j，Event_i，User_profile的Embedding concat起来，输入到一个FNN网络中，得到其权重W_i,j，再和Item_i,j做加权平均。
 4) 关于Event属性的处理，里面包括了Item的停留时长, item距离现在的时间，item是否被加购等。
+
+8. 125431
+1) 
