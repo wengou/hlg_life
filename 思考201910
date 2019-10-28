@@ -21,3 +21,11 @@
 [2] 评价指标是Real Valued AUC，将广告按照实际RPM从高到低排序，对每个曝光i，遍历其后续的曝光j, sum_i_j(rpm_j - rmp_i)【Z1】得到理想排序时的状况，
     再根据rank score排序，同样计算sum_i_j(rpm_j - rmp_i) 【Z2】, Z1/Z2 就得到[-1, 1]之间的值;
 [3] 损失函数受logloss的启发，采用了soft_auc的方式,sum_i_j[sig(Y_i' - Y_j')*(Y_i - Y_j) + sig(Y_j' - Y_i')*(Y_j - Y_i)]
+
+4. 124372
+[1] 新人会场存在用户特征行为稀疏、训练数据中正样本稀疏的问题，本文讲述了如何针对性的解决相关问题;
+[2] 历史行为稀疏，导致召回Trigger不足，解决的方法是结合实时Query+长期类目偏好进行召回； 离线使用搜索日志，计算Query->类目，再提取Query中的Tag，
+    综合得到(Query + Tag)对应的Item List，在线时获取实时Query的Tag，结合用户的长期类目兴趣召回;
+[3] 长期偏好召回时，对叶子类目、卖家、品牌都算了协同过滤进行召回;
+[4] 关于离线截断的CTR分，这个有借鉴意义，做了Item的统计CTR和类目平均CTR的加权，(ItemPV/(ItemPV + CateAvgPV))*ItemStatCtr + (CateAvgPV/(ItemPV + CateAvgPV)))*CateCtr
+[5] 对于CVR样本稀疏的问题，提出了灰样本的概念，不是只有成交的样本作为正样本，其它点击了的样本可以通过协同过滤计算和成交样本的相似度，将该相似度作为Label值，补充正样本不足的问题;
