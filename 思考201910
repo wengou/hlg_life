@@ -29,3 +29,10 @@
 [3] 长期偏好召回时，对叶子类目、卖家、品牌都算了协同过滤进行召回;
 [4] 关于离线截断的CTR分，这个有借鉴意义，做了Item的统计CTR和类目平均CTR的加权，(ItemPV/(ItemPV + CateAvgPV))*ItemStatCtr + (CateAvgPV/(ItemPV + CateAvgPV)))*CateCtr
 [5] 对于CVR样本稀疏的问题，提出了灰样本的概念，不是只有成交的样本作为正样本，其它点击了的样本可以通过协同过滤计算和成交样本的相似度，将该相似度作为Label值，补充正样本不足的问题;
+
+5. RCNN思路总结
+[1] https://zhuanlan.zhihu.com/p/23006190?refer=xiaoleimlnote
+[2] 步骤一: 使用Selective Search寻找出2000个候选区域；大致做法是先使用分割技术将图像分割成一个个小块，然后将其合并一个个大一点的区域;
+[3] 步骤二: 使用VGG网络用ImageNet数据预训练，然后将所有IOU大于0.5的区域作为正样本，finetune训练VGG网络;
+[4] 步骤三: finetune过的VGG网络提取特征，交给SVM进行分类。SVM将原有的bounding box作为正样本，将IOU小于0.3的作为负样本，训练分类器;
+[5] 步骤四: 将第5个卷积层的特征拿出来，选取IOU大于0.6作为正样本，进行Bounding Box的回归;
